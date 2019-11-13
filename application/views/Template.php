@@ -89,50 +89,55 @@
                                 <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                             </li>
                             <li>
-                                <a href=""><i class="fa fa-sitemap"></i> Bahan<span class="fa arrow"></span></a>
+                                <a href="#"><i class="fa fa-sitemap fa-fw"></i> Master Data<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="<?php echo site_url('/BahanController') ?>">Lihat Bahan</a>
+                                    <li>    
+                                        <a href="#">Bahan <span class="fa arrow"></span></a>
+                                        <ul class="nav nav-third-level">
+                                            <li>
+                                                <a href="<?php echo site_url('/BahanController') ?>">Lihat Bahan</a>
+                                            </li>
+                                            <li>
+                                                <a href="<?php echo site_url('/BahanController/tambahData') ?>">Tambah Bahan</a>
+                                            </li>
+                                        </ul>
+                                        <!-- /.nav-third-level -->
                                     </li>
-                                    <li>
-                                        <a href="<?php echo site_url('/BahanController/tambahData') ?>">Tambah Bahan</a>
+                                    <li>    
+                                        <a href="#">Pakaian <span class="fa arrow"></span></a>
+                                        <ul class="nav nav-third-level">
+                                            <li>
+                                                <a href="<?php echo site_url('/ProdukController') ?>">Lihat Pakaian</a>
+                                            </li>
+                                            <li>
+                                                <a href="<?php echo site_url('/ProdukController/tambahData') ?>">Tambah Pakaian</a>
+                                            </li>
+                                        </ul>
+                                        <!-- /.nav-third-level -->
                                     </li>
-                                </ul>
-                                <!-- /.nav-second-level -->
-                            </li>
-                            <li>
-                                <a href=""><i class="fa fa-female"></i> Pakaian<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="<?php echo site_url('/ProdukController') ?>">Lihat Pakaian</a>
+                                    <li>    
+                                        <a href="#">Akun <span class="fa arrow"></span></a>
+                                        <ul class="nav nav-third-level">
+                                            <li>
+                                                <a href="<?php echo site_url('/AkunController') ?>">Lihat Akun</a>
+                                            </li>
+                                            <li>
+                                                <a href="<?php echo site_url('/AkunController/tambahData') ?>">Tambah Akun</a>
+                                            </li>
+                                        </ul>
+                                        <!-- /.nav-third-level -->
                                     </li>
-                                    <li>
-                                        <a href="<?php echo site_url('/ProdukController/tambahData') ?>">Tambah Pakaian</a>
-                                    </li>
-                                </ul>
-                                <!-- /.nav-second-level -->
-                            </li>
-                            
-                            <li>
-                                <a href=""><i class="fa fa-cc"></i> Akun<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="<?php echo site_url('/AkunController') ?>">Lihat Akun</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?php echo site_url('/AkunController/tambahData') ?>">Tambah Akun</a>
-                                    </li>
-                                </ul>
-                                <!-- /.nav-second-level -->
-                            </li>
-                            <li>
-                                <a href=""><i class="fa fa-file-text"></i> BOM<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="<?php echo site_url('/BomController/FLihatBom') ?>">Lihat BOM</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?php echo site_url('/BomController/FTambahBom') ?>">Tambah BOM</a>
+                                    <li>    
+                                        <a href="#">BOM <span class="fa arrow"></span></a>
+                                        <ul class="nav nav-third-level">
+                                            <li>
+                                                <a href="<?php echo site_url('/BomController/FLihatBom') ?>">Lihat BOM</a>
+                                            </li>
+                                            <li>
+                                                <a href="<?php echo site_url('/BomController/FTambahBom') ?>">Tambah BOM</a>
+                                            </li>
+                                        </ul>
+                                        <!-- /.nav-third-level -->
                                     </li>
                                 </ul>
                                 <!-- /.nav-second-level -->
