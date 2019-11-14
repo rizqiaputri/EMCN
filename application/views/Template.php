@@ -75,7 +75,7 @@
                         </a>
                         <ul class="dropdown-menu dropdown-user">
                             <li class="divider"></li>
-                            <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            <li><a href="<?php echo site_url()."/BerandaController/Logout"?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                             </li>
                         </ul>
                     </li>
@@ -138,6 +138,63 @@
                                             </li>
                                         </ul>
                                         <!-- /.nav-third-level -->
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-fax fa-fw"></i> Transaksi<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>    
+                                        <a href="#">Pesanan <span class="fa arrow"></span></a>
+                                        <ul class="nav nav-third-level">
+                                            <li>
+                                                <a href="<?php echo site_url('/PesananController/lihatPesanan') ?>">Lihat Pesanan</a>
+                                            </li>
+                                            <li>
+                                                <a href="<?php echo site_url('/PesananController/index') ?>">Tambah Pesanan</a>
+                                            </li>
+                                        </ul>
+                                        <!-- /.nav-third-level -->
+                                    </li>
+                                    <li>    
+                                        <a href="#">Pembelian <span class="fa arrow"></span></a>
+                                        <ul class="nav nav-third-level">
+                                            <li>
+                                                <a href="#">Lihat Pembelian</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tambah Pembelian</a>
+                                            </li>
+                                        </ul>
+                                        <!-- /.nav-third-level -->
+                                    </li>
+                                    <li>    
+                                        <a href="#">Produksi <span class="fa arrow"></span></a>
+                                        <ul class="nav nav-third-level">
+                                            <li>
+                                                <a href="#">Lihat Produksi</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tambah Produksi</a>
+                                            </li>
+                                        </ul>
+                                        <!-- /.nav-third-level -->
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-file-text fa-fw"></i> Laporan<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="#">Jurnal</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Buku Besar</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Harga Pokok Produksi</a>
                                     </li>
                                 </ul>
                                 <!-- /.nav-second-level -->

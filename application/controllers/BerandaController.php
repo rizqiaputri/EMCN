@@ -8,6 +8,12 @@ class BerandaController extends CI_Controller
         $index['sub']  = 'Beranda';
         $index['content'] = 'beranda_view';   
 		$this->load->view('Template', $index);
+    }
+    
+    public function Logout()
+	{
+		$this->session->sess_destroy();
+		redirect('LoginController');
 	}
 }
 ?>
