@@ -15,7 +15,7 @@
 <div class="panel-body">
 <form action="<?php echo site_url('/PembelianController/pilihBahan');?>" method="get">
 <div class="form-group">
-<label for="pesanan">Pakaian</label>
+<label for="pakaian">Pakaian</label>
 <div class="form-group input-group">
 <select name="pakaian" class="form-control" required>
 <option value="">--Pakaian--</option>

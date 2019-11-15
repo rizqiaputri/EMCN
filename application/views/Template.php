@@ -176,7 +176,7 @@
                                                 <a href="#">Lihat Produksi</a>
                                             </li>
                                             <li>
-                                                <a href="#">Tambah Produksi</a>
+                                                <a href="<?php echo site_url('/ProduksiController/index') ?>">Tambah Produksi</a>
                                             </li>
                                         </ul>
                                         <!-- /.nav-third-level -->

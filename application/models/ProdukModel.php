@@ -27,7 +27,8 @@ class ProdukModel extends CI_Model
         $data = array(
             'kd_produk'=>$id,
             'nama_produk'=>$nama,
-            'ukuran'=>$ukuran
+            'ukuran'=>$ukuran,
+            'harga'=>0
         );
         $this->db->insert('produk', $data);
     }
