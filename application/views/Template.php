@@ -161,10 +161,10 @@
                                         <a href="#">Pembelian <span class="fa arrow"></span></a>
                                         <ul class="nav nav-third-level">
                                             <li>
-                                                <a href="#">Lihat Pembelian</a>
+                                                <a href="<?php echo site_url('/PembelianController/lihatData') ?>">Lihat Pembelian</a>
                                             </li>
                                             <li>
-                                                <a href="#">Tambah Pembelian</a>
+                                                <a href="<?php echo site_url('/PembelianController/index') ?>">Tambah Pembelian</a>
                                             </li>
                                         </ul>
                                         <!-- /.nav-third-level -->
