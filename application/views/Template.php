@@ -173,7 +173,7 @@
                                         <a href="#">Produksi <span class="fa arrow"></span></a>
                                         <ul class="nav nav-third-level">
                                             <li>
-                                                <a href="#">Lihat Produksi</a>
+                                                <a href="<?php echo site_url('/ProduksiController/lihatProduksi') ?>">Lihat Produksi</a>
                                             </li>
                                             <li>
                                                 <a href="<?php echo site_url('/ProduksiController/index') ?>">Tambah Produksi</a>
@@ -188,7 +188,7 @@
                                 <a href="#"><i class="fa fa-file-text fa-fw"></i> Laporan<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
                                     <li>
-                                        <a href="#">Jurnal</a>
+                                        <a href="<?php echo site_url('/KeuanganController/jurnalView') ?>">Jurnal</a>
                                     </li>
                                     <li>
                                         <a href="#">Buku Besar</a>

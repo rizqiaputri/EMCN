@@ -89,7 +89,7 @@ class PembelianModel extends CI_Model
         $this->db->insert('jurnal',$insertJurnalKU);
 
         $insertJurnalDP = array('no_transaksi'=>$kode,
-        'no_akun'=>'115',
+        'no_akun'=>'113',
         'posisi_dr_cr'=>'D',
         'tanggal'=>date('Y-m-d'),
         'nominal'=>$totalP);

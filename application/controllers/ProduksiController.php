@@ -3,6 +3,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class ProduksiController extends CI_Controller {
 
+    public function getDetail()
+    {
+        $id = $this->uri->segment(3);
+        $index['produksi'] = $this->ProduksiModel->getDetail($id);
+        $index['nav']  = 'Produksi';
+        $index['sub']  = 'Detail Produksi';
+        $index['content'] = 'produksi/detail_view';   
+		    $this->load->view('Template', $index);
+    }
+
+    public function lihatProduksi()
+    {
+        $index['produksi'] = $this->ProduksiModel->getData();
+        $index['nav']  = 'Produksi';
+        $index['sub']  = 'Data Produksi';
+        $index['content'] = 'produksi/lihat_view';   
+		    $this->load->view('Template', $index);  
+    }
+
     public function konfProduksi()
     {
         $produksi = $this->ProduksiModel->KonfProduksi();

@@ -1,6 +1,20 @@
 <?php
 class ProduksiModel extends CI_Model
 {
+    public function getDetail($id)
+    {
+        $this->db->select('bbb,btkl,bop,total');
+        $this->db->from('produksi');
+        $this->db->where('no_transaksi',$id);
+        return $this->db->get()->row_array();
+    }
+
+    public function getData()
+    {
+        $this->db->order_by('no_transaksi', 'asc');
+        return $this->db->get('produksi')->result_array();
+    }
+
     public function getPesanan()
     {
         return $this->db->get('pesanan')->result_array();
