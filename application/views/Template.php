@@ -191,10 +191,13 @@
                                         <a href="<?php echo site_url('/KeuanganController/jurnalView') ?>">Jurnal</a>
                                     </li>
                                     <li>
-                                        <a href="#">Buku Besar</a>
+                                        <a href="<?php echo site_url('/KeuanganController/bukbesView') ?>">Buku Besar</a>
                                     </li>
                                     <li>
-                                        <a href="#">Harga Pokok Produksi</a>
+                                        <a href="<?php echo site_url('/KeuanganController/hpproduksiView') ?>">Harga Pokok Produksi</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo site_url('/KeuanganController/kartuhppesananView') ?>">Kartu Harga Pokok Pesanan</a>
                                     </li>
                                 </ul>
                                 <!-- /.nav-second-level -->

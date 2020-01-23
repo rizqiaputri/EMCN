@@ -1,6 +1,6 @@
 <div class="row">
 <div class="col-md-12">
-<h1 class="page-header"><?php $nav; ?></h1>
+<h1 class="page-header"><?php echo $nav; ?></h1>
 </div>
 </div>
 
@@ -8,7 +8,7 @@
 <div class="col-md-12">
 
 <div class="table-responsive">
-<form action="<?php echo site_url('/KeuanganController/JurnalPer')?>" method="get">
+<form action="<?php echo site_url('/KeuanganController/jurnalPer')?>" method="get">
 <div class="form-group input-group">
 <?php if(empty($periode)){ ?>
 <input type="month" class="form-control" name="periode" id="periode" value="<?php echo date('Y-m') ?>">
