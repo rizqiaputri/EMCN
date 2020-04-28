@@ -71,15 +71,14 @@ class ProduksiController extends CI_Controller {
         $btkl = $this->input->post('btkl');
         $bop  = $this->input->post('bop');
         $jumlah = $this->input->post('jumlah');
-        $pk = $this->session->userdata('pakaian');
 
         $this->session->set_userdata('pakaian',$pakaian);
         $this->session->set_userdata('btkl',$btkl);
         $this->session->set_userdata('bop',$bop);
         $this->session->set_userdata('jumlah',$jumlah);
 
-        $index['jumlah'] = $this->ProduksiModel->getJumlah($pesanan,$pk);
-        $index['bbb']  = $this->ProduksiModel->getBBB($pk);
+        $index['jumlah'] = $this->ProduksiModel->getJumlah($pesanan,$pakaian);
+        $index['bbb']  = $this->ProduksiModel->getBBB($pakaian);
         $index['btkl'] = $this->session->userdata('btkl');
         $index['nav']  = 'Produksi';
         $index['sub']  = 'Konfirmasi Produksi';
