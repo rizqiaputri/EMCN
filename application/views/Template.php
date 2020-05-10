@@ -1,3 +1,4 @@
+<?php $role = $this->session->userdata('posisi') ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -71,7 +72,7 @@
                 <ul class="nav navbar-right navbar-top-links">
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa fa-user fa-fw"></i> Test Admin <b class="caret"></b>
+                            <i class="fa fa-user fa-fw"></i> <?php echo $this->session->userdata('username') ?> <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu dropdown-user">
                             <li class="divider"></li>
@@ -88,6 +89,7 @@
                             <li>
                                 <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                             </li>
+                             <?php if($role == 'pemilik'){ ?>
                             <li>
                                 <a href="#"><i class="fa fa-sitemap fa-fw"></i> Master Data<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
@@ -142,9 +144,13 @@
                                 </ul>
                                 <!-- /.nav-second-level -->
                             </li>
+                             <?php } ?>
                             <li>
+                                <?php if($role == 'penjualan' || $role == 'produksi'){ ?>
                                 <a href="#"><i class="fa fa-fax fa-fw"></i> Transaksi<span class="fa arrow"></span></a>
+                                 <?php } ?>
                                 <ul class="nav nav-second-level">
+                                <?php if($role == 'penjualan'){ ?>
                                     <li>    
                                         <a href="#">Pesanan <span class="fa arrow"></span></a>
                                         <ul class="nav nav-third-level">
@@ -157,6 +163,8 @@
                                         </ul>
                                         <!-- /.nav-third-level -->
                                     </li>
+                                    <?php } ?>
+                                    <?php if($role == 'produksi'){ ?>
                                     <li>    
                                         <a href="#">Pembelian <span class="fa arrow"></span></a>
                                         <ul class="nav nav-third-level">
@@ -181,9 +189,11 @@
                                         </ul>
                                         <!-- /.nav-third-level -->
                                     </li>
+                                    <?php } ?>
                                 </ul>
                                 <!-- /.nav-second-level -->
                             </li>
+                            <?php if($role == 'pemilik') { ?>
                             <li>
                                 <a href="#"><i class="fa fa-file-text fa-fw"></i> Laporan<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
@@ -202,6 +212,7 @@
                                 </ul>
                                 <!-- /.nav-second-level -->
                             </li>
+                            <?php } ?>
                         </ul>
                     </div>
                     <!-- /.sidebar-collapse -->
