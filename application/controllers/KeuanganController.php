@@ -51,6 +51,7 @@ class KeuanganController extends CI_Controller {
 		$periode = $this->input->get('periode');
 		$bulan   = date('m', strtotime($periode));
 		$tahun   = date('Y', strtotime($periode));
+		$index['periode'] = $periode;
 		$index['akun'] = $this->KeuanganModel->getAkun();
 		$index['nav']  = 'Buku Besar';
         $index['sub']  = 'Buku Besar';
